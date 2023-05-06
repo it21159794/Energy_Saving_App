@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Energy Saving App(New)</string>
+    <string name="new_user_signup">New User? <b>SignUp</b></string>
+    <string name="predicted_bill">Predicted bill for next month: Rs.%.2f</string>
+</resources>

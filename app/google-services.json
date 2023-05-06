@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "604013441203",
+    "firebase_url": "https://energy-saving-app-new-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "energy-saving-app-new",
+    "storage_bucket": "energy-saving-app-new.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:604013441203:android:e9b8c81a3e78461b69c0c6",
+        "android_client_info": {
+          "package_name": "com.example.energysavingappnew"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "604013441203-vu60apg9gj6si90jsa18jooo88j59gmn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNDxfGktvwsP5D_gQLGvAPYuy1n5qq16c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "604013441203-vu60apg9gj6si90jsa18jooo88j59gmn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

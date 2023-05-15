@@ -13,6 +13,18 @@
         android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".CalcFootPrintNew"
+            android:exported="false" />
+        <activity
+            android:name=".DashBoardNon"
+            android:exported="false" />
+        <activity
+            android:name=".EnergySavingAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".RenewableSourceAdmin"
+            android:exported="false" />
+        <activity
             android:name=".MonthBillPredictor"
             android:exported="false" />
         <activity
@@ -41,6 +53,30 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
+            android:exported="true" /> <!-- Pasindu -->
+        <activity
+            android:name=".HomePageDesignAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".HomePageDesign"
+            android:exported="false" />
+        <activity
+            android:name=".RecommendedUsageAmount"
+            android:exported="false" />
+        <activity
+            android:name=".RenewableSourceDetailsUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RenewableSourceDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InsertRenewableSources"
+            android:exported="false" />
+        <activity
+            android:name=".FetchRenewableSources"
+            android:exported="false" />
+        <activity
+            android:name=".FetchRenewableSourcesUser"
             android:exported="false" />
         <activity
             android:name=".SplashActivity"
@@ -50,7 +86,37 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+        </activity> <!-- Poorna -->
+        <activity
+            android:name=".CalculateElectricBill"
+            android:exported="false" />
+        <activity
+            android:name=".EConsumptionCalculator"
+            android:exported="false" />
+        <activity
+            android:name=".FetchingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FetchingActivityUser"
+            android:exported="false" />
+        <activity
+            android:name=".InsertionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TipDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TipDetailsActivityUser"
+            android:exported="false" />
+        <activity
+            android:name=".ItemAddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DashboardSupplierActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

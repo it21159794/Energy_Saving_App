@@ -16,9 +16,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
-        binding.checkBtn.setOnClickListener{
-            startActivity(Intent(this, MonthBillPredictor::class.java))
-        }
+//        binding.checkBtn.setOnClickListener{
+//            startActivity(Intent(this, MonthBillPredictor::class.java))
+//        }
 
         
 
@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
 
         //handle click, skip and continue to main screen
         binding.skipBtn.setOnClickListener{
-            startActivity(Intent(this, DashboardUserActivity::class.java))
+            startActivity(Intent(this, HomePageDesign::class.java))
         }
 
         //

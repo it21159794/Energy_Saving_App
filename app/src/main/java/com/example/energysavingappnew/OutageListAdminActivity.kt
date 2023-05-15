@@ -37,8 +37,8 @@ class OutageListAdminActivity : AppCompatActivity() {
 
         //get from intent, that we passed from adapter
         val intent = intent
-        locationId = intent.getStringExtra("locationId")!!
-        location = intent.getStringExtra("location")!!
+        locationId = intent.getStringExtra("locationId").toString()
+        location = intent.getStringExtra("location").toString()
 
         //set outage location
         binding.subTitleTv.text = location

@@ -119,7 +119,11 @@ class LoginActivity : AppCompatActivity() {
                         finish()
                     }
                     else if (userType == "admin"){
-                        startActivity(Intent(this@LoginActivity, DashboardAdminActivity::class.java))
+                        startActivity(Intent(this@LoginActivity, HomePageDesignAdmin::class.java))
+                        finish()
+                    }
+                    else if (userType == "supplier"){
+                        startActivity(Intent(this@LoginActivity, DashboardSupplierActivity::class.java))
                         finish()
                     }
                 }

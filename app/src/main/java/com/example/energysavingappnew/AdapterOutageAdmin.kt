@@ -1,6 +1,8 @@
 package com.example.energysavingappnew
 
+import android.app.AlertDialog
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -64,9 +66,44 @@ class AdapterOutageAdmin :RecyclerView.Adapter<AdapterOutageAdmin.HolderOutageAd
         //load location
         MyApplication.loadLocation(locationId, holder.locationTv)
 
+        //handle click, show dialog with option 1)Edit Outage 2)Delete Outage
+        holder.moreBtn.setOnClickListener {
+            moreOptionsDialog(model, holder)
+        }
+
         //we don't need.........
 
     }
+
+    private fun moreOptionsDialog(model: ModelOutage, holder: AdapterOutageAdmin.HolderOutageAdmin) {
+        //get id,title of outage
+        val outageId = model.id
+        val outageTitle = model.title
+
+        //options to show in dialog
+        val options = arrayOf("Edit", "Delete")
+
+        //alert dialog
+        val builder = AlertDialog.Builder(context)
+        builder.setTitle("Choose Option")
+            .setItems(options) {dialog, position ->
+                //handle item click
+                if(position==0){
+                    //Edit is clicked
+                    val intent = Intent(context, OutageEditActivity::class.java)
+                    intent.putExtra("outageId", outageId)//passed outageId, will be used to edit the book
+                    context.startActivity(intent)
+                }
+                else if (position ==1){
+                    //Delete is clicked
+
+                    //show confirmation dialog first if you need...
+                    MyApplication.deleteOutage(context, outageId, outageTitle)
+                }
+            }
+            .show()
+    }
+
 
     override fun getItemCount(): Int {
         return outageArrayList.size //item count
